@@ -1,7 +1,7 @@
 library(ggplot2)
 library(RColorBrewer)
 
-data("diamonds")
+data("diamonds") # взяла стандартный датасет из библиотеки, выгрузила его отдельно в репозиторий
 
 p <- ggplot(diamonds, aes(x = carat, y = price, color = cut)) +
   geom_point(alpha = 0.5) +
